@@ -19,7 +19,7 @@
     "autoprefixer": "*",
     "eslint": "*",
     "eslint-config-next": "*",
-    "next": "*",
+    "next": "^13.5.6",
     "postcss": "*",
     "react": "*",
     "react-dom": "*",
