@@ -20,7 +20,7 @@
     "daisyui": "*",
     "eslint": "*",
     "eslint-config-next": "*",
-    "next": "*",
+    "next": "^14.0.0",
     "postcss": "*",
     "react": "*",
     "react-dom": "*",
