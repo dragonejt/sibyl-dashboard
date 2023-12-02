@@ -13,15 +13,15 @@
     "pages:dev": "npx wrangler pages dev .vercel/output/static --compatibility-flag=nodejs_compat"
   },
   "dependencies": {
+    "@mantine/core": "^7.2.2",
+    "@mantine/hooks": "^7.2.2",
     "@types/node": "*",
     "@types/react": "*",
     "@types/react-dom": "*",
     "autoprefixer": "*",
-    "daisyui": "*",
     "eslint": "*",
     "eslint-config-next": "*",
     "next": "^14.0.0",
-    "postcss": "*",
     "react": "*",
     "react-dom": "*",
     "tailwindcss": "*",
@@ -30,6 +30,9 @@
   "devDependencies": {
     "@cloudflare/next-on-pages": "*",
     "eslint-plugin-next-on-pages": "*",
+    "postcss": "^8.4.32",
+    "postcss-preset-mantine": "^1.11.0",
+    "postcss-simple-vars": "^7.0.1",
     "vercel": "*"
   }
 }
