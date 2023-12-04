@@ -2,10 +2,9 @@
 
 import { AppShell, Avatar, Burger, Group, Space, Title } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import Image from 'next/image'
 
 export default function Home() {
-  const [opened, actions] = useDisclosure();
+  const [opened, { toggle }] = useDisclosure();
 
   return (
     <AppShell
@@ -14,9 +13,9 @@ export default function Home() {
       padding="md"
     >
       <AppShell.Header>
-        <Burger opened={opened} hiddenFrom="sm" size="sm" />
+        <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
         <Group>
-          <Space/>
+          <Space />
           <Avatar src="./icon.png"></Avatar>
           <Title>Sibyl System</Title>
         </Group>
